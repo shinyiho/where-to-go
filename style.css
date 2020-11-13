@@ -15,18 +15,26 @@ body {
 }
 .cloth{
   display:flex;
+  justify-content:center;
   align-items:center;
-  border-radius:30px;
-  background:orange;
-  padding:-20px
+  background:white;
+  position: relative;
+  bottom:-40px;
 
 }
 .pant{
   display:flex;
+  justify-content:center;
   align-items:center;
-  border-radius:30px;
-  background:orange;
-  padding:-20px
-    
+  background:white;
+  position: relative;
+  top:-40px;
+}
 
+
+#clothImg{
+   z-index:9
+}
+#pantImg{
+  z-index:8
 }
