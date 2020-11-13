@@ -15,6 +15,7 @@ body {
   flex-direction: column;
   height: 90vh;
 }
+
 .cloth {
   display: flex;
   justify-content: center;
@@ -22,6 +23,14 @@ body {
   background: white;
   position: relative;
   top: -47px;
+}
+.hand{
+  display: flex;
+  justify-content: center;
+/*   position: relative; */
+   top: 100px;
+/*    position: absolute; */
+  z-index: 9;
 }
 .pant {
   display: flex;
