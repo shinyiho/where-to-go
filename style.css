@@ -12,6 +12,7 @@ body {
   display:flex;
   justify-content:center;
   flex-direction:column;
+  padding:70px
 }
 .cloth{
   display:flex;
