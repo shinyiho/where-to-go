@@ -59,11 +59,17 @@ body {
 #pantImg{
   z-index:8
 }
+.header{
+  
+  display:flex;
+  flex-direction:row;
+  
+}
 .head{
   z-index:11;
-/*   float:right; */
-  positionl:absolute;
-    width:30px;
+  positionl:relative;
+  width:30px;
+  text-aligh:center
 }
 
 
