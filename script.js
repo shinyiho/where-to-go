@@ -1,8 +1,13 @@
 
-let clothChoices = ["https://img.icons8.com/emoji/300/000000/womans-clothes.png","https://img.icons8.com/plasticine/300/000000/sweater.png"]
+let clothChoices = ["https://img.icons8.com/emoji/300/000000/womans-clothes.png",
+                    "https://img.icons8.com/plasticine/300/000000/sweater.png",
+                    "https://img.icons8.com/plasticine/300/000000/clothes.png",
+                   "https://img.icons8.com/color/300/000000/worn-out-clothes.png"]
 let clothChoicesPointer = 0
 let cloth = document.getElementById("clothImg")
-let pantChoices = ["https://img.icons8.com/emoji/300/000000/womans-clothes.png","https://img.icons8.com/plasticine/300/000000/sweater.png"]
+let pantChoices = ["https://img.icons8.com/plasticine/300/000000/jeans.png",
+                   "https://img.icons8.com/plasticine/300/000000/trousers.png",
+                   "https://img.icons8.com/color/300/000000/womens-pants--v2.png"]
 let pantChoicesPointer = 0
 let pant = document.getElementById("pantImg")
       
