@@ -32,8 +32,7 @@ body {
   top: 40px;
 }
 .setting {
-  display: flex;
-  flex-direction: row;
+  
 }
 .setting > button {
   width: 30px;
@@ -60,9 +59,12 @@ body {
  
 }
 #face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 140px;
   height: 160px;
-  position:absolute;
+/*   position:absolute; */
 }
 #eye {
   width: 100px;
