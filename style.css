@@ -7,69 +7,62 @@ body {
   max-height: 100vh;
 }
 
-.box{
-  background:white;
-  border-radius:30px;
-  display:flex;
-  justify-content:center;
-  flex-direction:column;
-/*   padding:70px; */
+.box {
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   max-height: 92vh;
 }
-.cloth{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:white;
+.cloth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
   position: relative;
-  top:-20px
-
+  top: -20px;
 }
-.pant{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:white;
+.pant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
   position: relative;
-  top:-100px;
+  top: -100px;
 }
-.setting{
-  display:flex;
-  flex-direction:column;
- 
+.setting {
+  display: flex;
+  flex-direction: row;
 }
-.setting>button{
-  width:30px;
-  background-color: ivory; 
+.setting > button {
+  width: 30px;
+  background-color: ivory;
   border: none;
   box-shadow: 2px 4px #888888;
   font-size: 20px;
-  border-radius:5px;
-  margin-top:10px;
-  margin-left:30px;
-   z-index:10
-}
-.setting:first-child{
-  margin-top:30px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-left: 30px;
+  z-index: 10;
 }
 
-#clothImg{
-   z-index:9
+#clothImg {
+  z-index: 9;
 }
-#pantImg{
-  z-index:8
+#pantImg {
+  z-index: 8;
 }
-.header{
-  
-  display:flex;
-  flex-direction:row;
-  
+.head {
+  top:70px;
+  z-index: 11;
+  positionl: relative;
 }
-.head{
-  z-index:11;
-  positionl:relative;
-  width:30px;
-  text-aligh:center
+.face {
+  width: 140px;
+  height: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+/*   positionl: absolute; */
 }
-
-
