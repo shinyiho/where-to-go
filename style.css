@@ -59,3 +59,8 @@ body {
 #pantImg{
   z-index:8
 }
+.head{
+  z-index:11;
+/*   float:right; */
+  positionl:absolute
+}
