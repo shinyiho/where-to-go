@@ -20,17 +20,15 @@ let eyeChoicesPointer = 0
 let eye = document.getElementById("eye")
 
 
-let noseChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose1.png?v=1605294888627",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose2.png?v=1605294888848",
+let noseChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose2.png?v=1605294888848",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose1.png?v=1605294888627",
                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose3.png?v=1605294889417"]
 let noseChoicesPointer = 0
 let nose = document.getElementById("nose")
 
 
-let lipChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip.png?v=1605294888448",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye3.png?v=1605294888696",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye7.png?v=1605294889324",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye2.png?v=1605294889485"]
+let lipChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip2.png?v=1605294888502",
+                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip.png?v=1605294888448"]
 let lipChoicesPointer = 0
 let lip = document.getElementById("lip")
 
