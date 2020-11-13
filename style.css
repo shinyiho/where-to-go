@@ -31,7 +31,16 @@ body {
   position: relative;
   top:-40px;
 }
-
+.setting>button{
+  width:100px
+  z-index:7;
+  background-color: ivory; 
+  border: none;
+  padding: 7px 16px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
 
 #clothImg{
    z-index:9
