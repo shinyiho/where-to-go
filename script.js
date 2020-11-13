@@ -3,3 +3,7 @@
 
 // prints "hi" in the browser's dev tools console
 console.log("hi");
+
+
+
+let cloth = <img src="https://img.icons8.com/emoji/48/000000/womans-clothes.png"/>
