@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-height: 92vh;
+  height: 90vh;
 }
 .cloth {
   display: flex;
@@ -21,7 +21,7 @@ body {
   align-items: center;
   background: white;
   position: relative;
-  top: -20px;
+  top: 100px;
 }
 .pant {
   display: flex;
@@ -29,7 +29,7 @@ body {
   align-items: center;
   background: white;
   position: relative;
-  top: -100px;
+  top: 40px;
 }
 .setting {
   display: flex;
