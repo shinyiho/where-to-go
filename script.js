@@ -10,6 +10,10 @@ let pantChoices = ["https://img.icons8.com/office/300/000000/jeans.png",
                    "https://img.icons8.com/color/300/000000/womens-pants--v2.png"]
 let pantChoicesPointer = 0
 let pant = document.getElementById("pantImg")
+let eye = document.getElementById("eye")
+let nose = document.getElementById("nose")
+let lip = document.getElementById("lip")
+
       
       
 function clothLeft(){
@@ -18,7 +22,6 @@ function clothLeft(){
   cloth.src = clothChoices[clothChoicesPointer]
   
 }
-// }
 
 function clothRight(){
   console.log(cloth)
@@ -33,11 +36,14 @@ function pantLeft(){
   pant.src = pantChoices[pantChoicesPointer]
   
 }
-// }
 
 function pantRight(){
   console.log(pant)
   pantChoicesPointer = pantChoicesPointer+1 > pantChoices.length - 1? 0 :pantChoicesPointer + 1
   pant.src = pantChoices[pantChoicesPointer]
   
+}
+
+function changeEye(){
+  eye.src = pantChoices[pantChoicesPointer]
 }

@@ -17,27 +17,29 @@
     
     <div class = "box">
         <div class = "setting">
-            <button type="button">&#128064;</button>
+            <button onClick = "changeEye()" type="button">&#128064;</button>
             <button type="button">&#128067;</button>
             <button type="button">&#128069;</button>
         </div>
+      
         <div class = "head">
-            <img class="face" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface.png?v=1605295108978"/>
-            <img class="eye" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye1.png?v=1605294886281"/>
-            <img class="nose" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose2.png?v=1605294888848"/>
-            <img class="lip" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip2.png?v=1605294888502"/>
+            <img id="face" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface.png?v=1605295108978"/>
+            <img id="eye" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye1.png?v=1605294886281"/>
+            <img id="nose" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose2.png?v=1605294888848"/>
+            <img id="lip" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip2.png?v=1605294888502"/>
         </div>
      
-      <div class = "cloth">
-          <img onClick = "clothLeft()" src="https://img.icons8.com/small/16/000000/sort-left.png"/>
-          <img id ="clothImg" src="https://img.icons8.com/emoji/300/000000/womans-clothes.png"/>
-          <img onClick = "clothRight()" src="https://img.icons8.com/small/16/000000/sort-right.png"/>
-      </div>
-      <div class = "pant">
-          <img onClick = "pantLeft()" src="https://img.icons8.com/small/16/000000/sort-left.png"/>
-          <img id ="pantImg" src="https://img.icons8.com/office/300/000000/jeans.png"/>
-          <img onClick = "pantRight()" src="https://img.icons8.com/small/16/000000/sort-right.png"/>
-      </div>
+        <div class = "cloth">
+            <img onClick = "clothLeft()" src="https://img.icons8.com/small/16/000000/sort-left.png"/>
+            <img id ="clothImg" src="https://img.icons8.com/emoji/300/000000/womans-clothes.png"/>
+            <img onClick = "clothRight()" src="https://img.icons8.com/small/16/000000/sort-right.png"/>
+        </div>
+        <div class = "pant">
+            <img onClick = "pantLeft()" src="https://img.icons8.com/small/16/000000/sort-left.png"/>
+            <img id ="pantImg" src="https://img.icons8.com/office/300/000000/jeans.png"/>
+            <img onClick = "pantRight()" src="https://img.icons8.com/small/16/000000/sort-right.png"/>
+        </div>
+      
     </div>
 
   </body>
