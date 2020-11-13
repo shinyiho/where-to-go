@@ -4,6 +4,7 @@ body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
   background: pink;
+  max-height: 100vh;
 }
 
 .box{
@@ -12,7 +13,8 @@ body {
   display:flex;
   justify-content:center;
   flex-direction:column;
-  padding:70px
+/*   padding:70px; */
+  max-height: 100vh;
 }
 .cloth{
   display:flex;
@@ -31,15 +33,19 @@ body {
   position: relative;
   top:-40px;
 }
+.setting{
+  display:flex;
+  flex-direction:column;
+ 
+}
 .setting>button{
-  width:100px
-  z-index:7;
+  width:50px;
   background-color: ivory; 
   border: none;
-  padding: 7px 16px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
+  box-shadow: 2px 4px #888888;
+  font-size: 30px;
+  border-radius:5px;
+  margin:10px
 }
 
 #clothImg{
