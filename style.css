@@ -56,14 +56,29 @@ body {
 .head {
   top: 70px;
   z-index: 11;
+  position:relative;
+  
  
 }
 .face {
   width: 140px;
   height: 160px;
+  position:absolute;
 }
 .eye {
+  top:10px
   width: 120px;
   height: 30px;
-/*   positionl: absolute; */
+  position: absolute;
 }
+.nose {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+}
+.lip {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+}
+
