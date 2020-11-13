@@ -14,6 +14,7 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 90vh;
+  
 }
 
 .cloth {
@@ -22,15 +23,18 @@ body {
   align-items: center;
   background: white;
   position: relative;
-  top: -47px;
+  top: 100px;
+   z-index: 15;
 }
 .hand{
+/*   width:70%; */
+  transform:scale(0.55);
   display: flex;
   justify-content: center;
-/*   position: relative; */
-   top: 100px;
+  position: relative;
+   top: -50px;
 /*    position: absolute; */
-  z-index: 9;
+  z-index: 13;
 }
 .pant {
   display: flex;
@@ -39,6 +43,7 @@ body {
   background: white;
   position: relative;
   top: -88px;
+   z-index: 14;
 }
 .foot{
   display: flex;
@@ -66,7 +71,7 @@ body {
   z-index: 8;
 }
 .head {
-/*   top: px; */
+  top: 140px;
   z-index: 11;
   position:relative;
     margin-left: auto;
@@ -97,5 +102,9 @@ body {
   width: 120px;
   height: 30px;
   position: absolute;
+}
+.setting{
+    top:80px;
+  position:relative
 }
 
