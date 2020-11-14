@@ -15,6 +15,9 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 90vh;
+    z-index:-1;
+  width:80vw;
+  
 }
 
 
