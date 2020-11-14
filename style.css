@@ -11,7 +11,7 @@ body {
 /*   background: white; */
   background: url("https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243");
   background-repeat: no-repeat;
-/*   background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   background-size: 1200px 800px;
 
