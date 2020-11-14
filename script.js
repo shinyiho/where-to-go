@@ -1,5 +1,6 @@
 
-let clothChoices = ["https://img.icons8.com/emoji/200/000000/womans-clothes.png",
+let clothChoices = [
+                    // "https://img.icons8.com/emoji/200/000000/womans-clothes.png",
                    //  "https://img.icons8.com/plasticine/200/000000/sweater.png",
                    //  "https://img.icons8.com/plasticine/200/000000/clothes.png",
                    // "https://img.icons8.com/color/200/000000/worn-out-clothes.png",
@@ -61,7 +62,19 @@ let face = document.getElementById("face")
 
 let viewChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243",
                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3915_p.png?v=1605376319324",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3962_p.png?v=1605376320303"
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3962_p.png?v=1605376320303",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3988_p.png?v=1605381486645",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4429_p.png?v=1605381486855",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4313_p.png?v=1605381487473",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4290_p.png?v=1605381487975",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4307_p.png?v=1605381488173",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4402_p.png?v=1605381488308",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_7932_p.png?v=1605381488422",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4308_p.png?v=1605381488591",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4325_p.png?v=1605381488715",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4395_p.png?v=1605381488736",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4521_p.png?v=1605381488973",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_6042_p.png?v=1605381716181"
                    ]
 let viewChoicesPointer = 0
 let view = document.getElementById("box")
@@ -124,6 +137,6 @@ function changeFace(){
 function changeView(){
    console.log(document.width)
   viewChoicesPointer = viewChoicesPointer+1 > viewChoices.length - 1? 0 :viewChoicesPointer + 1
-  view.style = `background:url(${viewChoices[viewChoicesPointer]});background-size:1344px 1008px;`
+  view.style = `background:url(${viewChoices[viewChoicesPointer]});background-size:896px 672px;`
   //這樣會覆蓋整個style想想看如何加上去而不是覆蓋1344px 1008px
 }
