@@ -3,7 +3,7 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
-  background: pink;
+  background: ivory;
   max-height: 100vh;
 }
 
@@ -17,6 +17,7 @@ body {
   height: 90vh;
     z-index:-1;
   width:60vw;
+
   
 }
 
