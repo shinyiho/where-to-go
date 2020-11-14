@@ -4,7 +4,9 @@ let clothChoices = ["https://img.icons8.com/emoji/200/000000/womans-clothes.png"
                     "https://img.icons8.com/plasticine/200/000000/clothes.png",
                    "https://img.icons8.com/color/200/000000/worn-out-clothes.png",
                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2F%E5%84%B2%E5%AD%983.png?v=1605364493122",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fcloth.png?v=1605365166273"]
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fcloth.png?v=1605365166273",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2F%E5%86%B0.png?v=1605366089790",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2F%E5%88%80%E5%93%A5.png?v=1605366573381"]
 let clothChoicesPointer = 0
 let cloth = document.getElementById("clothImg")
 
