@@ -58,6 +58,13 @@ let faceChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%
 let faceChoicesPointer = 0
 let face = document.getElementById("face")
 
+
+let viewChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3915_p.png?v=1605376319324",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3962_p.png?v=1605376320303"
+                   ]
+let viewChoicesPointer = 0
+let view = document.getElementById("box")
       
       
 function clothLeft(){
@@ -109,4 +116,13 @@ function changeFace(){
    console.log("face")
   faceChoicesPointer = faceChoicesPointer+1 > faceChoices.length - 1? 0 :faceChoicesPointer + 1
   face.src = faceChoices[faceChoicesPointer]
+}
+
+
+
+
+function changeView(){
+   console.log(document.width)
+  viewChoicesPointer = viewChoicesPointer+1 > viewChoices.length - 1? 0 :viewChoicesPointer + 1
+  view.style = `background:url(${viewChoices[viewChoicesPointer]});`
 }

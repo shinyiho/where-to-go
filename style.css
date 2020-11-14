@@ -7,8 +7,11 @@ body {
   max-height: 100vh;
 }
 
-.box {
-  background: white;
+#box {
+/*   background: white; */
+  background: url("https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243");
+  background-repeat: no-repeat;
+  background-size: fit;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -20,7 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+/*   background: white; */
   position: relative;
   top: -47px;
 }
@@ -36,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+/*   background: white; */
   position: relative;
   top: -88px;
 }
