@@ -6,14 +6,19 @@ let clothChoices = ["https://img.icons8.com/emoji/200/000000/womans-clothes.png"
                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2F%E5%84%B2%E5%AD%983.png?v=1605364493122",
                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fcloth.png?v=1605365166273",
                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2F%E5%86%B0.png?v=1605366089790",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2F%E5%88%80%E5%93%A5.png?v=1605366573381"]
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2F%E5%88%80%E5%93%A5.png?v=1605366573381",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fron1.png?v=1605371163455"]
 let clothChoicesPointer = 0
 let cloth = document.getElementById("clothImg")
 
 let pantChoices = ["https://img.icons8.com/office/200/000000/jeans.png",
                   "https://img.icons8.com/officel/200/000000/jeans.png",
                    "https://img.icons8.com/color/200/000000/womens-pants--v2.png",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2F%E8%97%8D%E8%A4%B2.png?v=1605367817924"]
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2F%E8%97%8D%E8%A4%B2.png?v=1605367817924",
+                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fcircle.png?v=1605371163455",
+                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fron.png?v=1605371163455",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Ffish.png?v=1605371163522",
+                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fpumkin.png?v=1605371163608"]
 let pantChoicesPointer = 0
 let pant = document.getElementById("pantImg")
 
