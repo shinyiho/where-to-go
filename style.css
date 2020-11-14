@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: orange;
   position: relative;
   top: -47px;
 }
