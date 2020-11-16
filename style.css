@@ -5,30 +5,26 @@ body {
   margin: 2em;
   background: ivory;
   max-height: 100vh;
-  display:flex;
-  
-  
+  display: flex;
 }
 
 #box {
-  
-/*   background: url("https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243");
-  background-size: 920px 710px; */
-  box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
-/*   // 896px 672px; */
+  box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488,
+    -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF,
+    12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B,
+    -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   border-radius: 30px;
   height: 90vh;
-  z-index:-1;
-  width:60vw;
-  position:relative;
-
-  
+  z-index: -1;
+  width: 60vw;
+  position: relative;
 }
-#background{
-    position:absolute;
-  width:60vw;
-    height:90vh;
-   border-radius: 30px;
+#background {
+  position: absolute;
+  width: 60vw;
+  height: 90vh;
+  opacity:70%;
+  border-radius: 30px;
 }
 .setting > button {
   width: 30px;
@@ -38,7 +34,7 @@ body {
   font-size: 20px;
   border-radius: 5px;
   margin-left: 30px;
-  margin-top:20px;
+  margin-top: 20px;
   z-index: 7;
 }
 #clothImg {
@@ -47,75 +43,72 @@ body {
 #pantImg {
   z-index: 8;
 }
-.me{
-    width:270px;
+.me {
+  width: 270px;
   height: 90vh;
-  display:flex;
-/*   justify-content:center; */
-  flex-direction: column; 
-  
+  display: flex;
+  /*   justify-content:center; */
+  flex-direction: column;
 }
-.head{
-  position:relative;
-  top:160px;
-    left:30px
-  
+.head {
+  position: relative;
+  top: 160px;
+  left: 30px;
 }
 
-#face{
-    position:absolute;
-  
+#face {
+  position: absolute;
 }
-#eye{
-    transform: scale(0.7); 
-    position:absolute;
-    top:40px;
-    left:10px
+#eye {
+  transform: scale(0.7);
+  position: absolute;
+  top: 40px;
+  left: 10px;
 }
-#nose{
-  transform: scale(0.7); 
-     position:absolute;
-    top:77px;
-  left:10px
+#nose {
+  transform: scale(0.7);
+  position: absolute;
+  top: 77px;
+  left: 10px;
 }
-#mouth{
-    transform: scale(0.7); 
-     position:absolute;
-   top:125px;
-    left:10px
+#mouth {
+  transform: scale(0.7);
+  position: absolute;
+  top: 125px;
+  left: 10px;
 }
-.cloth{
-/*      background:yellow; */
-    position:relative;
-    top:320px;
-      display: flex;
+.cloth {
+  /*      background:yellow; */
+  position: relative;
+  top: 320px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.pant{
-    position:relative;
-/*   background:green; */
-    top:280px;
-      display: flex;
+.pant {
+  position: relative;
+  /*   background:green; */
+  top: 280px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.foot{
-    position:relative;
-/*   background:purple*/; 
-    top:280px;
-         display: flex;
+.foot {
+  position: relative;
+  /*   background:purple*/
+  top: 280px;
+  display: flex;
   justify-content: center;
 }
-.options-container{
-  background:white;
-  width:30vw;
-  margin-left:40px
+.options-container {
+  background: white;
+  width: 30vw;
+  margin-left: 40px;
 }
-h2{
-  margin:0
+h2 {
+  margin: 0;
 }
-hr{
-      border-top: 1px solid #ed83b577;
-        margin: 18px 0px;
+hr {
+  border-top: 1px solid #ed83b577;
+  margin: 18px 0px;
 }
