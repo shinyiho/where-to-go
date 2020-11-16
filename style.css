@@ -100,9 +100,19 @@ body {
   background: white;
   width: 30vw;
   margin-left: 40px;
+  
+}
+.option{
+  margin:2px;
+    padding:4px;
+}
+.option:hover{
+  color:pink
 }
 h2 {
   margin: 0;
+  display:flex;
+  justify-content:center;
 }
 hr {
   border-top: 1px solid #ed83b577;
