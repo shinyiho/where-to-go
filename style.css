@@ -38,16 +38,16 @@ body {
   z-index: 7;
 }
 #clothImg {
-  width:250px;
+  width:220px;
   z-index: 9;
     position: relative;
-  top: 320px;
+  top: 310px;
 }
 #pantImg {
-    width:250px;
+    width:220px;
   z-index: 8;
     position: relative;
-  top: 280px;
+  top: 270px;
 }
 .me {
   width: 270px;
@@ -57,9 +57,10 @@ body {
   flex-direction: column;
 }
 .head {
+   transform: scale(0.95);
   position: relative;
   top: 160px;
-  left: 25px;
+  left: 10px;
 }
 
 #face {
@@ -85,12 +86,15 @@ body {
 }
 
 .foot {
-  
+   transform: scale(0.84);
   position: relative;
   /*   background:purple*/
-  top: 280px;
+  width:160px;
+  left:31px;
+  top: 260px;
+/*   
   display: flex;
-  justify-content: center;
+  justify-content: center; */
 }
 .options-container {
   background: white;
