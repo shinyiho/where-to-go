@@ -42,10 +42,10 @@ let eye = document.getElementById("eye")
 let nose = document.getElementById("nose")
 
 
-let lipChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip2.png?v=1605294888502",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip.png?v=1605294888448"]
-let lipChoicesPointer = 0
-let lip = document.getElementById("lip")
+// let lipChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip2.png?v=1605294888502",
+//                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip.png?v=1605294888448"]
+// let lipChoicesPointer = 0
+let mouth = document.getElementById("mouth")
 
 // let faceChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface.png?v=1605295108978",
 //                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface3.png?v=1605302847791",
@@ -60,24 +60,24 @@ let lip = document.getElementById("lip")
 let face = document.getElementById("face")
 
 
-let viewChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3915_p.png?v=1605376319324",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3962_p.png?v=1605376320303",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3988_p.png?v=1605381486645",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4429_p.png?v=1605381486855",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4313_p.png?v=1605381487473",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4290_p.png?v=1605381487975",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4307_p.png?v=1605381488173",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4402_p.png?v=1605381488308",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_7932_p.png?v=1605381488422",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4308_p.png?v=1605381488591",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4325_p.png?v=1605381488715",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4395_p.png?v=1605381488736",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4521_p.png?v=1605381488973",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_6042_p.png?v=1605381716181"
-                   ]
-let viewChoicesPointer = 0
-let view = document.getElementById("box")
+// let viewChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3915_p.png?v=1605376319324",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3962_p.png?v=1605376320303",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3988_p.png?v=1605381486645",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4429_p.png?v=1605381486855",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4313_p.png?v=1605381487473",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4290_p.png?v=1605381487975",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4307_p.png?v=1605381488173",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4402_p.png?v=1605381488308",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_7932_p.png?v=1605381488422",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4308_p.png?v=1605381488591",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4325_p.png?v=1605381488715",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4395_p.png?v=1605381488736",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4521_p.png?v=1605381488973",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_6042_p.png?v=1605381716181"
+//                    ]
+// let viewChoicesPointer = 0
+let backgroundsOption = document.getElementById("box")
       
       
 function clothLeft(){
@@ -113,11 +113,11 @@ function pantRight(){
 //   eyeChoicesPointer = eyeChoicesPointer+1 > eyeChoices.length - 1? 0 :eyeChoicesPointer + 1
 //   eye.src = eyeChoices[eyeChoicesPointer]
 // }
-function changeNose(){
-   console.log("nose")
-  noseChoicesPointer = noseChoicesPointer+1 > noseChoices.length - 1? 0 :noseChoicesPointer + 1
-  nose.src = noseChoices[noseChoicesPointer]
-}
+// function changeNose(){
+//    console.log("nose")
+//   noseChoicesPointer = noseChoicesPointer+1 > noseChoices.length - 1? 0 :noseChoicesPointer + 1
+//   nose.src = noseChoices[noseChoicesPointer]
+// }
 function changeLip(){
    console.log("lip")
   lipChoicesPointer = lipChoicesPointer+1 > lipChoices.length - 1? 0 :lipChoicesPointer + 1
@@ -142,20 +142,29 @@ function changeView(){
 }
 
 
-document.querySelectorAll('.AccessoriesOption').forEach(item => { item.addEventListener('click', toggleAccessories);})
+document.querySelectorAll('.accessoriesOption').forEach(item => { item.addEventListener('click', toggleAccessories);})
 
 function toggleAccessories(e){
    face.src = e.target.getAttribute('imgurl');
 }
 
-document.querySelectorAll('.EyesOption').forEach(item => { item.addEventListener('click', toggleEyes);})
+document.querySelectorAll('.eyesOption').forEach(item => { item.addEventListener('click', toggleEyes);})
 
 function toggleEyes(e){
    eye.src = e.target.getAttribute('imgurl');
 }
 
-document.querySelectorAll('.NosesOption').forEach(item => { item.addEventListener('click', toggleNoses);})
+document.querySelectorAll('.nosesOption').forEach(item => { item.addEventListener('click', toggleNoses);})
 
 function toggleNoses(e){
-   eye.src = e.target.getAttribute('imgurl');
+   nose.src = e.target.getAttribute('imgurl');
 }
+
+document.querySelectorAll('.mouthsOption').forEach(item => { item.addEventListener('click', toggleMouths);})
+
+function toggleMouths(e){
+   mouth.src = e.target.getAttribute('imgurl');
+}
+
+
+backgroundsOption
