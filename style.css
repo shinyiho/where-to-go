@@ -13,8 +13,9 @@ body {
 /*   // 896px 672px; */
   border-radius: 30px;
   display: flex;
-  justify-content: center;
-  align-items:end;
+/*   justify-content: center; */
+/*   align-items:flex-end; */
+  justify-content:flex-end;
   flex-direction: column;
   height: 90vh;
   z-index:-1;
@@ -39,14 +40,16 @@ body {
   z-index: 8;
 }
 .head {
-/*   top: px; */
+/*   top: 10px; */
   z-index: 11;
   position:relative;
   margin-left: auto;
    margin-right: auto;
+  
  
 }
 #face {
+/*   align-self:flex-end; */
   width: 140px;
   height: 160px;
 }
@@ -75,8 +78,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: -47px;
+/*   position: relative; */
+/*   top: -47px; */
 }
 .pant {
   display: flex;
@@ -84,12 +87,12 @@ body {
   align-items: center;
 /*   background: white; */
   position: relative;
-  top: -88px;
+/*   top: 0px; */
 }
 .foot{
   display: flex;
   justify-content: center;
-  position:relative;
+/*   position:relative; */
   bottom:100px;
   z-index: 7;
   
