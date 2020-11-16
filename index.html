@@ -15,13 +15,17 @@
   </head>
   <body>
     <div id="box">
-      <div class="setting">
+      <img
+            id="background"
+            src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243"
+          />
+<!--       <div class="setting">
         <button onClick="changeFace()" type="button">&#128125;</button>
         <button onClick="changeEye()" type="button">&#128064;</button>
         <button onClick="changeNose()" type="button">&#128067;</button>
         <button onClick="changeLip()" type="button">&#128069;</button>
         <button onClick="changeView()" type="button">&#128088;</button>
-      </div>
+      </div> -->
       <div class="me">
         <div class="head">
           <img
@@ -128,88 +132,132 @@
       <hr />
       <h2>&#128064;Eyes&#128064;</h2>
       <span
-        class="EyesOption"
+        class="eyesOption"
         imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye1.png?v=1605294886281"
         >Smiley</span
       >
       <span
-        class="EyesOption"
+        class="eyesOption"
         imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye3.png?v=1605294888696"
         >Glasses</span
       >
       <span
-        class="EyesOption"
+        class="eyesOption"
         imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye7.png?v=1605294889324"
         >Comma</span
       >
       <span
-        class="EyesOption"
+        class="eyesOption"
         imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye2.png?v=1605294889485"
         >Wink</span
       >
       <hr />
       <h2>&#128067;Noses&#128067;</h2>
       <span
-        class="NosesOption"
+        class="nosesOption"
         imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose2.png?v=1605294888848"
         >Small</span
       >
       <span
-        class="NosesOption"
+        class="nosesOption"
         imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose1.png?v=1605294888627"
         >Sharp</span
       >
       <span
-        class="NosesOption"
+        class="nosesOption"
         imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose3.png?v=1605294889417"
         >Wide</span
       >
       <hr />
       <h2>&#128069;Mouths&#128069;</h2>
       <span
-        class="MouthsOption"
+        class="mouthsOption"
         imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip2.png?v=1605294888502"
         >Open</span
       >
       <span
-        class="MouthsOption"
+        class="mouthsOption"
         imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip.png?v=1605294888448"
         >Cat face</span
       >
       <hr />
-      
-      let viewChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3915_p.png?v=1605376319324",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3962_p.png?v=1605376320303",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3988_p.png?v=1605381486645",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4429_p.png?v=1605381486855",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4313_p.png?v=1605381487473",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4290_p.png?v=1605381487975",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4307_p.png?v=1605381488173",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4402_p.png?v=1605381488308",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_7932_p.png?v=1605381488422",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4308_p.png?v=1605381488591",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4325_p.png?v=1605381488715",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4395_p.png?v=1605381488736",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4521_p.png?v=1605381488973",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_6042_p.png?v=1605381716181"
-                   ]
       <h2>&#128088;Backgrounds&#128088;</h2>
-      <spanclass="BackgroundsOption" imgurl=>5th Avenue</span>
-      <span>Central Park</span>
-      <span>Times Square</span>
-      <span>Street View</span>
-      <span>Flatiron Building II</span>
-      <span>Graffiti</span>
-      <span>Coffee Shop</span>
-      <span>Bushwick</span>
-      <span>Bookstore</span>
-      <span>Church</span>
-      <span>Williamsburg</span>
-      <span>karaoke</span>
-      <span>Night View</span>
-      <span>Dombo</span>
-      <span>Library</span>
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243"
+        >5th Avenue</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3915_p.png?v=1605376319324"
+        >Central Park</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3962_p.png?v=1605376320303"
+        >Times Square</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3988_p.png?v=1605381486645"
+        >Street View</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4429_p.png?v=1605381486855"
+        >Flatiron Building II</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4313_p.png?v=1605381487473"
+        >Graffiti</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4290_p.png?v=1605381487975"
+        >Coffee Shop</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4307_p.png?v=1605381488173"
+        >Bushwick</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4402_p.png?v=1605381488308"
+        >Bookstore</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_7932_p.png?v=1605381488422"
+        >Church</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4308_p.png?v=1605381488591"
+        ,
+        >Williamsburg</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4325_p.png?v=1605381488715"
+        >karaoke</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4395_p.png?v=1605381488736"
+        >Night View</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_4521_p.png?v=1605381488973"
+        >Dombo</span
+      >
+      <span
+        class="backgroundsOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_6042_p.png?v=1605381716181"
+        >Library</span
+      >
       <hr />
       <h2>&#128088;Tops&#128088;</h2>
       <span>Heart</span>

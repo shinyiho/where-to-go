@@ -77,7 +77,7 @@ let face = document.getElementById("face")
 //                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_6042_p.png?v=1605381716181"
 //                    ]
 // let viewChoicesPointer = 0
-let backgroundsOption = document.getElementById("box")
+let background = document.getElementById("background")
       
       
 function clothLeft(){
@@ -166,5 +166,8 @@ function toggleMouths(e){
    mouth.src = e.target.getAttribute('imgurl');
 }
 
+document.querySelectorAll('.backgroundsOption').forEach(item => { item.addEventListener('click', toggleBackgrounds);})
 
-backgroundsOption
+function toggleBackgrounds(e){
+   background.src = `background:url(${e.target.getAttribute('imgurl')});
+}
