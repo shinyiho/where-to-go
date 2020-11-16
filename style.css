@@ -106,8 +106,9 @@ body {
   margin-left:40px
 }
 h2{
-  margin-top:0
+  margin:0
 }
 hr{
-  color:pink
+      border-top: 1px solid #ed83b577;
+        margin: 18px 0px;
 }

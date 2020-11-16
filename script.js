@@ -27,18 +27,18 @@ let pantChoices = ["https://img.icons8.com/office/200/000000/jeans.png",
 let pantChoicesPointer = 0
 let pant = document.getElementById("pantImg")
 
-let eyeChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye1.png?v=1605294886281",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye3.png?v=1605294888696",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye7.png?v=1605294889324",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye2.png?v=1605294889485"]
-let eyeChoicesPointer = 0
+// let eyeChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye1.png?v=1605294886281",
+//                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye3.png?v=1605294888696",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye7.png?v=1605294889324",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye2.png?v=1605294889485"]
+// let eyeChoicesPointer = 0
 let eye = document.getElementById("eye")
 
 
-let noseChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose2.png?v=1605294888848",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose1.png?v=1605294888627",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose3.png?v=1605294889417"]
-let noseChoicesPointer = 0
+// let noseChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose2.png?v=1605294888848",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose1.png?v=1605294888627",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose3.png?v=1605294889417"]
+// let noseChoicesPointer = 0
 let nose = document.getElementById("nose")
 
 
@@ -108,11 +108,11 @@ function pantRight(){
   
 }
 
-function changeEye(){
-   console.log("changeeye")
-  eyeChoicesPointer = eyeChoicesPointer+1 > eyeChoices.length - 1? 0 :eyeChoicesPointer + 1
-  eye.src = eyeChoices[eyeChoicesPointer]
-}
+// function changeEye(){
+//    console.log("changeeye")
+//   eyeChoicesPointer = eyeChoicesPointer+1 > eyeChoices.length - 1? 0 :eyeChoicesPointer + 1
+//   eye.src = eyeChoices[eyeChoicesPointer]
+// }
 function changeNose(){
    console.log("nose")
   noseChoicesPointer = noseChoicesPointer+1 > noseChoices.length - 1? 0 :noseChoicesPointer + 1
@@ -146,4 +146,16 @@ document.querySelectorAll('.AccessoriesOption').forEach(item => { item.addEventL
 
 function toggleAccessories(e){
    face.src = e.target.getAttribute('imgurl');
+}
+
+document.querySelectorAll('.EyesOption').forEach(item => { item.addEventListener('click', toggleEyes);})
+
+function toggleEyes(e){
+   eye.src = e.target.getAttribute('imgurl');
+}
+
+document.querySelectorAll('.NosesOption').forEach(item => { item.addEventListener('click', toggleNoses);})
+
+function toggleNoses(e){
+   eye.src = e.target.getAttribute('imgurl');
 }
