@@ -1,93 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>What to wear!</title>
-    
+
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
+    <link rel="stylesheet" href="/style.css" />
+
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
+  </head>
   <body>
-    
-    <div id = "box">
-        <div class = "setting">
-            <button onClick = "changeFace()" type="button">&#128125;</button>
-            <button onClick = "changeEye()" type="button">&#128064;</button>
-            <button onClick = "changeNose()" type="button">&#128067;</button>
-            <button onClick = "changeLip()" type="button">&#128069;</button>
-            <button onClick = "changeView()" type="button">&#128088;</button>
+    <div id="box">
+      <div class="setting">
+        <button onClick="changeFace()" type="button">&#128125;</button>
+        <button onClick="changeEye()" type="button">&#128064;</button>
+        <button onClick="changeNose()" type="button">&#128067;</button>
+        <button onClick="changeLip()" type="button">&#128069;</button>
+        <button onClick="changeView()" type="button">&#128088;</button>
+      </div>
+      <div class="me">
+        <div class="head">
+          <img
+            id="face"
+            src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface.png?v=1605295108978"
+          />
+          <img
+            id="eye"
+            src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye1.png?v=1605294886281"
+          />
+          <img
+            id="nose"
+            src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose2.png?v=1605294888848"
+          />
+          <img
+            id="lip"
+            src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip2.png?v=1605294888502"
+          />
         </div>
-        <div class = "me">
-          <div class = "head">
-              <img id="face" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface.png?v=1605295108978"/>
-              <img id="eye" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Feye1.png?v=1605294886281"/>
-              <img id="nose" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fnose2.png?v=1605294888848"/>
-              <img id="lip" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Flip2.png?v=1605294888502"/>
-          </div>
 
-          <div class = "cloth">
-              <img onClick = "clothLeft()" src="https://img.icons8.com/small/16/000000/sort-left.png"/>
-              <img id ="clothImg" src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2F%E5%84%B2%E5%AD%983.png?v=1605364493122"/>
-              <img onClick = "clothRight()" src="https://img.icons8.com/small/16/000000/sort-right.png"/>
-          </div>
-          <div class = "pant">
-              <img onClick = "pantLeft()" src="https://img.icons8.com/small/16/000000/sort-left.png"/>
-              <img id ="pantImg" src="https://img.icons8.com/office/200/000000/jeans.png"/>
-              <img onClick = "pantRight()" src="https://img.icons8.com/small/16/000000/sort-right.png"/>
-          </div>
-          <div class = "foot">
-              <img src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Ffoot.png?v=1605305004114"/>
-          </div>
-         </div>
+        <div class="cloth">
+          <img
+            onClick="clothLeft()"
+            src="https://img.icons8.com/small/16/000000/sort-left.png"
+          />
+          <img
+            id="clothImg"
+            src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2F%E5%84%B2%E5%AD%983.png?v=1605364493122"
+          />
+          <img
+            onClick="clothRight()"
+            src="https://img.icons8.com/small/16/000000/sort-right.png"
+          />
+        </div>
+        <div class="pant">
+          <img
+            onClick="pantLeft()"
+            src="https://img.icons8.com/small/16/000000/sort-left.png"
+          />
+          <img
+            id="pantImg"
+            src="https://img.icons8.com/office/200/000000/jeans.png"
+          />
+          <img
+            onClick="pantRight()"
+            src="https://img.icons8.com/small/16/000000/sort-right.png"
+          />
+        </div>
+        <div class="foot">
+          <img
+            src="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Ffoot.png?v=1605305004114"
+          />
+        </div>
+      </div>
     </div>
-    
-<!--     =======
-    "",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface3.png?v=1605302847791",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface6.png?v=1605302847791",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface2.png?v=1605302847791",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface7.png?v=1605302847845",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface8.png?v=1605302847861",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface5.png?v=1605302847898",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface4.png?v=1605302848002",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface9.png?v=1605302848280"]
-    
-    
-   
-    ======= -->
-    <div class = "options-container">
+
+ 
+    <div class="options-container">
       <h2>&#128125;Accessories&#128125;</h2>
-      <span class ="AccessoriesOption"  imgurl= "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface.png?v=1605295108978">None</span>
-      <span class ="AccessoriesOption"  imgurl=  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface6.png?v=1605302847791">Bow</span>
-      <span>Forehead lines</span>
-      <span>Beanie</span>
-      <span>Blush</span>
-      <span>Meow</span>
-      <span>Bangs</span>
-      <span>ちびまる子ちゃん</span>
-      <span>Alien</span>
-      <hr>
+      <span
+        class="AccessoriesOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface.png?v=1605295108978"
+        >None</span
+      >
+      <span
+        class="AccessoriesOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface3.png?v=1605302847791"
+        >Bow</span
+      >
+      <span
+        class="AccessoriesOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface6.png?v=1605302847791"
+        >Forehead lines</span
+      >
+      <span
+        class="AccessoriesOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface2.png?v=1605302847791"
+        >Beanie</span
+      >
+      <span
+        class="AccessoriesOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface7.png?v=1605302847845"
+        >Blush</span
+      >
+      <span
+        class="AccessoriesOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface8.png?v=1605302847861"
+        >Meow</span
+      >
+      <span
+        class="AccessoriesOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface5.png?v=1605302847898"
+        >Bangs</span
+      >
+      <span
+        class="AccessoriesOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface4.png?v=1605302848002"
+        >ちびまる子ちゃん</span
+      >
+      <span
+        class="AccessoriesOption"
+        imgurl="https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface9.png?v=1605302848280"
+        >Alien</span
+      >
+      <hr />
       <h2>&#128064;Eyes&#128064;</h2>
       <span>Smiley</span>
       <span>Glasses</span>
       <span>Comma lines</span>
       <span>Wink</span>
-      <hr>
+      <hr />
       <h2>&#128067;Noses&#128067;</h2>
       <span>Small</span>
       <span>Sharp</span>
       <span>Wide</span>
-      <hr>
-       <h2>&#128069;Mouths&#128069;</h2>
+      <hr />
+      <h2>&#128069;Mouths&#128069;</h2>
       <span>Open</span>
       <span>Cat face</span>
-      <hr>
+      <hr />
       <h2>&#128088;Backgrounds&#128088;</h2>
       <span>5th Avenue</span>
       <span>Central Park</span>
@@ -104,8 +158,8 @@
       <span>Night View</span>
       <span>Dombo</span>
       <span>Library</span>
-      <hr>
-       <h2>&#128088;Tops&#128088;</h2>
+      <hr />
+      <h2>&#128088;Tops&#128088;</h2>
       <span>Heart</span>
       <span>Christmas Tree</span>
       <span>Popsicle</span>
@@ -115,7 +169,7 @@
       <span>Snake</span>
       <span>Cake</span>
       <span>Cloud</span>
-      <hr>
+      <hr />
       <h2>&#128088;Bottoms&#128088;</h2>
       <span>Jeans</span>
       <span>Leggings</span>
@@ -125,9 +179,7 @@
       <span>Skirt</span>
       <span>Mermaid</span>
       <span>Pumkin</span>
-      <hr>
-      
+      <hr />
     </div>
-
   </body>
 </html>

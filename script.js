@@ -47,16 +47,16 @@ let lipChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2
 let lipChoicesPointer = 0
 let lip = document.getElementById("lip")
 
-let faceChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface.png?v=1605295108978",
-                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface3.png?v=1605302847791",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface6.png?v=1605302847791",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface2.png?v=1605302847791",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface7.png?v=1605302847845",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface8.png?v=1605302847861",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface5.png?v=1605302847898",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface4.png?v=1605302848002",
-                  "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface9.png?v=1605302848280"]
-let faceChoicesPointer = 0
+// let faceChoices = ["https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface.png?v=1605295108978",
+//                    "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface3.png?v=1605302847791",
+//                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface6.png?v=1605302847791",
+//                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface2.png?v=1605302847791",
+//                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface7.png?v=1605302847845",
+//                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface8.png?v=1605302847861",
+//                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface5.png?v=1605302847898",
+//                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface4.png?v=1605302848002",
+//                   "https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2Fface9.png?v=1605302848280"]
+// let faceChoicesPointer = 0
 let face = document.getElementById("face")
 
 
@@ -125,11 +125,11 @@ function changeLip(){
 }
 
 
-function changeFace(){
-   console.log("face")
-  faceChoicesPointer = faceChoicesPointer+1 > faceChoices.length - 1? 0 :faceChoicesPointer + 1
-  face.src = faceChoices[faceChoicesPointer]
-}
+// function changeFace(){
+//    console.log("face")
+//   faceChoicesPointer = faceChoicesPointer+1 > faceChoices.length - 1? 0 :faceChoicesPointer + 1
+//   face.src = faceChoices[faceChoicesPointer]
+// }
 
 
 
@@ -142,10 +142,8 @@ function changeView(){
 }
 
 
+document.querySelectorAll('.AccessoriesOption').forEach(item => { item.addEventListener('click', toggleAccessories);})
+
 function toggleAccessories(e){
-
-   const imgurl = e.target.getAttribute('imgurl');
-    console.log(imgurl)
+   face.src = e.target.getAttribute('imgurl');
 }
-
- document.querySelectorAll('.AccessoriesOption').forEach(item => { item.addEventListener('click', toggleAccessories);})
