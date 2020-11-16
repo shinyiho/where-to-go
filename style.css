@@ -50,12 +50,16 @@ body {
   top: 270px;
 }
 .me {
-/*   transform: scale(0.3); */
+
   width: 270px;
   height: 90vh;
   display: flex;
   /*   justify-content:center; */
   flex-direction: column;
+}
+.memove{
+/*      transform: scaleX(-1)scale(0.3); */
+  
 }
 .head {
   transform: scale(0.95);
