@@ -38,28 +38,34 @@ body {
 }
 .me{
     width:300px;
+/*   height: 90vh; */
   display:flex;
-  
   flex-direction: column; */
+  align-items:flex-end;
 }
 .head{
-  background:orange;
   position:relative;
+  top:200px
   
 }
 
 #face{
-   background:yellow;
+    position:absolute;
   
 }
 #eye{
-     background:red;
+      transform: scale(0.7); 
+     position:absolute;
+    top:20px;
 }
 #nose{
-     background:green;
+     position:absolute;
+    top:80px;
 }
 #lip{
-     background:purple;
+    transform: scale(0.7); 
+     position:absolute;
+   top:120px;
 }
 .cloth{
      background:yellow;
