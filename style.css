@@ -40,18 +40,13 @@ body {
   z-index: 8;
 }
 .head{
-  position:absolute;
 }
 
-/* .face{
-  
+#face{
 }
-.eye{
-  
+#eye{
 }
-.nose{
-  
+#nose{
 }
-.lip{
-  
-} */
+#lip{
+}
