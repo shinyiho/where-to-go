@@ -37,15 +37,20 @@ body {
   z-index: 8;
 }
 .me{
+    width:300px;
   display:flex;
+  
   flex-direction: column; */
 }
 .head{
   background:orange;
+  position:relative;
+  
 }
 
 #face{
    background:yellow;
+  
 }
 #eye{
      background:red;
