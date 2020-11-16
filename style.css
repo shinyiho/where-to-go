@@ -11,6 +11,7 @@ body {
 #box {
   background: url("https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243");
   background-size: 920px 710px;
+  box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0),inset 4px 4px 15px 0px rgba(0,0,0,0.7), -45px -21px 47px -30px rgba(0,0,0,0.7);
 /*   // 896px 672px; */
   border-radius: 30px;
   height: 90vh;
@@ -70,7 +71,7 @@ body {
 #lip{
     transform: scale(0.7); 
      position:absolute;
-   top:120px;
+   top:125px;
     left:10px
 }
 .cloth{
