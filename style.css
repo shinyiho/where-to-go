@@ -9,49 +9,17 @@ body {
 
 #box {
   background: url("https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243");
-  background-size: 896px 672px;
+  background-size: 920px 710px;
+/*   // 896px 672px; */
   border-radius: 30px;
   display: flex;
   justify-content: center;
+  align-items:end;
   flex-direction: column;
   height: 90vh;
-    z-index:-1;
+  z-index:-1;
   width:60vw;
 
-  
-}
-
-
-.cloth {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-/*   background: white; */
-  position: relative;
-  top: -47px;
-}
-.hand{
-  display: flex;
-  justify-content: center;
-/*   position: relative; */
-   top: 100px;
-/*    position: absolute; */
-  z-index: 9;
-}
-.pant {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-/*   background: white; */
-  position: relative;
-  top: -88px;
-}
-.foot{
-  display: flex;
-  justify-content: center;
-  position:relative;
-  bottom:100px;
-  z-index: 7;
   
 }
 .setting > button {
@@ -64,7 +32,6 @@ body {
   margin-left: 30px;
   z-index: 7;
 }
-
 #clothImg {
   z-index: 9;
 }
@@ -75,7 +42,7 @@ body {
 /*   top: px; */
   z-index: 11;
   position:relative;
-    margin-left: auto;
+  margin-left: auto;
    margin-right: auto;
  
 }
@@ -104,4 +71,28 @@ body {
   height: 30px;
   position: absolute;
 }
+.cloth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -47px;
+}
+.pant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*   background: white; */
+  position: relative;
+  top: -88px;
+}
+.foot{
+  display: flex;
+  justify-content: center;
+  position:relative;
+  bottom:100px;
+  z-index: 7;
+  
+}
+
 

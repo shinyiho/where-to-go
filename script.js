@@ -137,6 +137,6 @@ function changeFace(){
 function changeView(){
    console.log(document.width)
   viewChoicesPointer = viewChoicesPointer+1 > viewChoices.length - 1? 0 :viewChoicesPointer + 1
-  view.style = `background:url(${viewChoices[viewChoicesPointer]});background-size:896px 672px;`
+  view.style = `background:url(${viewChoices[viewChoicesPointer]});background-size:920px 710px;`
   //這樣會覆蓋整個style想想看如何加上去而不是覆蓋1344px 1008px
 }
