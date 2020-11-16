@@ -38,10 +38,16 @@ body {
   z-index: 7;
 }
 #clothImg {
+  width:250px;
   z-index: 9;
+    position: relative;
+  top: 320px;
 }
 #pantImg {
+    width:250px;
   z-index: 8;
+    position: relative;
+  top: 280px;
 }
 .me {
   width: 270px;
@@ -53,7 +59,7 @@ body {
 .head {
   position: relative;
   top: 160px;
-  left: 30px;
+  left: 25px;
 }
 
 #face {
@@ -77,23 +83,9 @@ body {
   top: 125px;
   left: 10px;
 }
-.cloth {
-  /*      background:yellow; */
-  position: relative;
-  top: 320px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.pant {
-  position: relative;
-  /*   background:green; */
-  top: 280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .foot {
+  
   position: relative;
   /*   background:purple*/
   top: 280px;
