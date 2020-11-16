@@ -23,7 +23,7 @@ body {
   position: absolute;
   width: 60vw;
   height: 90vh;
-  opacity:70%;
+  opacity: 70%;
   border-radius: 30px;
 }
 .setting > button {
@@ -38,18 +38,19 @@ body {
   z-index: 7;
 }
 #clothImg {
-  width:220px;
+  width: 220px;
   z-index: 9;
-    position: relative;
+  position: relative;
   top: 310px;
 }
 #pantImg {
-    width:220px;
+  width: 220px;
   z-index: 8;
-    position: relative;
+  position: relative;
   top: 270px;
 }
 .me {
+/*   transform: scale(0.3); */
   width: 270px;
   height: 90vh;
   display: flex;
@@ -57,7 +58,7 @@ body {
   flex-direction: column;
 }
 .head {
-   transform: scale(0.95);
+  transform: scale(0.95);
   position: relative;
   top: 160px;
   left: 10px;
@@ -86,13 +87,13 @@ body {
 }
 
 .foot {
-   transform: scale(0.84);
+  transform: scale(0.84);
   position: relative;
   /*   background:purple*/
-  width:160px;
-  left:31px;
+  width: 160px;
+  left: 31px;
   top: 260px;
-/*   
+  /*   
   display: flex;
   justify-content: center; */
 }
@@ -100,24 +101,26 @@ body {
   background: white;
   width: 30vw;
   margin-left: 40px;
-  
 }
-.option{
-  margin:2px;
-    padding:4px;
-  color:Aldrich;
+.option {
+  margin: 2px;
+  padding: 4px;
+ font-family: 'Press Start 2P', cursive;
+  font-size:12px;
+  color: lightcoral;
 }
-.option:hover{
-  color:pink
+.option:hover {
+  color: pink;
 }
 h2 {
-  font-family: 'Stalinist One', cursive;
-  color:coral;
+  font-family: "Stalinist One", cursive;
+   font-size:20px;
+  color: orangered;
   margin: 0;
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 hr {
   border-top: 1px solid #ed83b577;
-  margin: 18px 0px;
+  margin: 14px 0px;
 }
