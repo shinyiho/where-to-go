@@ -5,18 +5,14 @@ body {
   margin: 2em;
   background: ivory;
   max-height: 100vh;
+  
 }
 
 #box {
-  background: url("https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243");
+/*   background: url("https://cdn.glitch.com/1db309ec-6a57-4600-8474-072f16a1ba36%2FIMG_3914_p.png?v=1605376319243"); */
   background-size: 920px 710px;
 /*   // 896px 672px; */
   border-radius: 30px;
-  display: flex;
-/*   justify-content: center; */
-/*   align-items:flex-end; */
-  justify-content:flex-end;
-  flex-direction: column;
   height: 90vh;
   z-index:-1;
   width:60vw;
@@ -31,6 +27,7 @@ body {
   font-size: 20px;
   border-radius: 5px;
   margin-left: 30px;
+  margin-top:20px;
   z-index: 7;
 }
 #clothImg {
@@ -38,6 +35,10 @@ body {
 }
 #pantImg {
   z-index: 8;
+}
+.me{
+  display:flex;
+  flex-direction: column; */
 }
 .head{
   background:orange;
@@ -54,4 +55,13 @@ body {
 }
 #lip{
      background:purple;
+}
+.cloth{
+     background:yellow;
+}
+.pant{
+  background:green;
+}
+.foot{
+  background:purple;
 }
