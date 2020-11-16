@@ -140,3 +140,12 @@ function changeView(){
   view.style = `background:url(${viewChoices[viewChoicesPointer]});background-size:920px 710px;`
   //這樣會覆蓋整個style想想看如何加上去而不是覆蓋1344px 1008px
 }
+
+
+function toggleAccessories(e){
+
+   const imgurl = e.target.getAttribute('imgurl');
+    console.log(imgurl)
+}
+
+ document.querySelectorAll('.AccessoriesOption').forEach(item => { item.addEventListener('click', toggleAccessories);})
