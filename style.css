@@ -105,11 +105,14 @@ body {
 .option{
   margin:2px;
     padding:4px;
+  color:Aldrich;
 }
 .option:hover{
   color:pink
 }
 h2 {
+  font-family: 'Stalinist One', cursive;
+  color:coral;
   margin: 0;
   display:flex;
   justify-content:center;
