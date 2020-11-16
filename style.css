@@ -101,5 +101,6 @@ body {
   justify-content: center;
 }
 .options-container{
+  width:20vw;
   margin:30px
 }
