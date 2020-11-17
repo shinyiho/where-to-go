@@ -78,6 +78,7 @@ let face = document.getElementById("face");
 // let viewChoicesPointer = 0
 let background = document.getElementById("background");
 
+
 function clothLeft() {
   console.log(cloth);
   clothChoicesPointer =
@@ -202,3 +203,8 @@ document.querySelectorAll(".bottomsOption").forEach(item => {
 function togglebottoms(e) {
   pant.src = e.target.getAttribute("imgurl");
 }
+
+
+
+
+document.querySelectorAll(".me").classList.add('myCssClass');

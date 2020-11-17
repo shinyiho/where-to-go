@@ -57,10 +57,7 @@ body {
   /*   justify-content:center; */
   flex-direction: column;
 }
-.memove{
-/*      transform: scaleX(-1)scale(0.3); */
-  
-}
+
 .head {
   transform: scale(0.95);
   position: relative;
@@ -127,4 +124,19 @@ h2 {
 hr {
   border-top: 1px solid #ed83b577;
   margin: 14px 0px;
+}
+
+@keyframes go {
+  0%   {transform: scaleX(-1)scale(0.3);}
+  25%  {transform: scaleX(-1)scale(0.3);}
+  50%  {transform: scaleX(-1)scale(0.3);}
+  75%  {transform: scaleX(-1)scale(0.3);}
+  100% {transform: scaleX(-1)scale(0.3);}
+}
+
+
+
+.go {
+  animation-name: go;
+  animation-duration: 4s;
 }
