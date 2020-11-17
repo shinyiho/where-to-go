@@ -147,6 +147,18 @@ hr {
   animation-name: go;
 /*     transition: all 13s;
    transition: transform 10s; */
-  animation-duration: 15s;
+  animation-duration: 10s;
   
+}
+
+.go{
+  margin:-4px;
+  text-shadow:2px 2px #000000;
+  color:white;
+  font-size:20px
+}
+.go:hover{
+  color:white;
+  font-size:23px;
+ transition: all 0.5s ease-in-out;
 }

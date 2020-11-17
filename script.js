@@ -216,6 +216,6 @@ document.querySelector(".go").addEventListener("click", (e) => {
     timeoutId = setTimeout(() => {
       e.target.textContent = 'go'
       document.querySelector(".me").classList.remove("memove");
-    }, 15000);
+    }, 10000);
   }
 });
