@@ -206,5 +206,9 @@ function togglebottoms(e) {
 
 
 
+document.querySelector(".go").addEventListener("click", memove);
 
-document.querySelectorAll(".me").classList.add('myCssClass');
+function memove() {
+  console.log("nmenmoeve")
+  document.querySelector(".me").classList.add('memove');
+}

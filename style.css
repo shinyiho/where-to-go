@@ -127,16 +127,21 @@ hr {
 }
 
 @keyframes go {
-  0%   {transform: scaleX(-1)scale(0.3);}
-  25%  {transform: scaleX(-1)scale(0.3);}
-  50%  {transform: scaleX(-1)scale(0.3);}
-  75%  {transform: scaleX(-1)scale(0.3);}
-  100% {transform: scaleX(-1)scale(0.3);}
+  0%   {transform: scaleX(1)scale(0.5);}
+  25%  {transform: scaleX(1)scale(0.5);
+        transform:translate(500px,5px);}
+  30%  {transform: scaleX(-1)scale(0.3);}
+  40%  {transform: scaleX(-1)scale(0.3);
+        transform:translate(0px,10px);}
+  75%  {transform: scaleX(1)scale(0.2);}
+  80%  {transform: scaleX(1)scale(0.2);
+        transform:translate(300px,15px);}
+  100% {transform: scaleX(-1)scale(0.1);}
 }
 
 
 
-.go {
+.memove {
   animation-name: go;
-  animation-duration: 4s;
+  animation-duration: 10s;
 }
