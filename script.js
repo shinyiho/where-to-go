@@ -78,7 +78,6 @@ let face = document.getElementById("face");
 // let viewChoicesPointer = 0
 let background = document.getElementById("background");
 
-
 function clothLeft() {
   console.log(cloth);
   clothChoicesPointer =
@@ -204,16 +203,19 @@ function togglebottoms(e) {
   pant.src = e.target.getAttribute("imgurl");
 }
 
-
-
-document.querySelector(".go").addEventListener("click", ()=>{
-  document.querySelector(".me").classList.add('memove');
+let timeoutId
+document.querySelector(".go").addEventListener("click", (e) => {
+  if (document.querySelector(".me").classList.contains("memove")) {
+    document.querySelector(".me").classList.remove("memove");
+    e.target.textContent = 'go'
+    if (timeoutId) { clearTimeout(timeoutId) }
+    
+  } else {
+    e.target.textContent = 'stop'
+    document.querySelector(".me").classList.add("memove");
+    timeoutId = setTimeout(() => {
+      e.target.textContent = 'go'
+      document.querySelector(".me").classList.remove("memove");
+    }, 15000);
+  }
 });
-document.querySelector(".go").addEventListener("transitionend", ()=>{
-  document.querySelector(".me").classList.remove('memove');
-});
-
-// function memove() {
-//   console.log("nmenmoeve")
-  
-// }
