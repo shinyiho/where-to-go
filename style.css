@@ -130,18 +130,35 @@ hr {
   0%   {transform: scaleX(1)scale(0.5);}
   25%  {transform: scaleX(1)scale(0.5);
         transform:translate(500px,5px);}
-  30%  {transform: scaleX(-1)scale(0.3);}
-  40%  {transform: scaleX(-1)scale(0.3);
+  30%  {transform:translate(500px,5px);
+        transform: scaleX(1)scale(0.5);}
+/*   40%  {transform: scaleX(-1)scale(0.3);
         transform:translate(0px,10px);}
   75%  {transform: scaleX(1)scale(0.2);}
   80%  {transform: scaleX(1)scale(0.2);
         transform:translate(300px,15px);}
-  100% {transform: scaleX(-1)scale(0.1);}
+  100% {transform: scaleX(-1)scale(0.1);} */
+  
+  
+  0% {transform: scaleX(1)scale(0.5);}
+  10%{transform: scaleX(1)scale(0.5);}
+  20%{transform: scaleX(1)scale(0.5);}
+  30%{transform: scaleX(1)scale(0.5);}
+  40%{transform: scaleX(1)scale(0.5);}
+  50%{transform: scaleX(1)scale(0.5);}
+  60%{transform: scaleX(1)scale(0.5);}
+  70%{transform: scaleX(1)scale(0.5);}
+  80%{transform: scaleX(1)scale(0.5);}
+  90%{transform: scaleX(1)scale(0.5);}
+  100%{transform: scaleX(1)scale(0.5);}
 }
 
 
 
 .memove {
   animation-name: go;
+/*     transition: all 13s;
+   transition: transform 10s; */
   animation-duration: 10s;
+  
 }
