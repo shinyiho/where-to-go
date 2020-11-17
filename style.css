@@ -135,16 +135,16 @@ hr {
   
   
   0% {transform: scaleX(1)scale(1);}
-  10%{transform: scaleX(1)scale(0.6)}
-  20%{transform: scaleX(1)scale(0.55)translate(1000px,500px);}
-  30%{transform: scaleX(-1)scale(0.50)translate(1000px,500px)}
-  40%{transform: scaleX(1)scale(0.45)translate(1000px,500px);}
-  50%{transform: scaleX(-1)scale(0.40)translate(1000px,500px)}
-  60%{transform: scaleX(1)scale(0.35)translate(1000px,500px);}
-  70%{transform: scaleX(-1)scale(0.30)translate(1000px,500px)}
-  80%{transform: scaleX(1)scale(0.25)translate(1000px,500px);}
-  90%{transform: scaleX(-1)scale(0.20)translate(1000px,500px)}
-  100%{transform: scaleX(1)scale(0.15)translate(1000px,500px);}
+  10%{transform: scaleX(1)scale(0.4)translate(200px,400px)}
+  20%{transform: scaleX(1)scale(0.4)translate(1400px,400px);}
+  30%{transform: scaleX(-1)scale(0.35)translate(200px,600px)}
+  40%{transform: scaleX(1)scale(0.35)translate(1200px,600px);}
+  50%{transform: scaleX(-1)scale(0.30)translate(200px,800px)}
+  60%{transform: scaleX(1)scale(0.30)translate(1000px,800px);}
+  70%{transform: scaleX(-1)scale(0.20)translate(200px,1200px)}
+  80%{transform: scaleX(1)scale(0.15)translate(900px,1800px);}
+  90%{transform: scaleX(-1)scale(0.10)translate(200px,2000px)}
+  100%{transform: scaleX(1)scale(0.10)translate(900px,2000px);}
 }
 
 
