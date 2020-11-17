@@ -127,23 +127,17 @@ hr {
 }
 
 @keyframes go {
-
-/*   75%  {transform: scaleX(1)scale(0.2);}
-  80%  {transform: scaleX(1)scale(0.2);
-        transform:translate(300px,15px);}
-  100% {transform: scaleX(-1)scale(0.1);}  */
-  
   
   0% {transform: scaleX(1)scale(1);}
-  10%{transform: scaleX(1)scale(0.4)translate(200px,400px)}
-  20%{transform: scaleX(1)scale(0.4)translate(1400px,400px);}
-  30%{transform: scaleX(-1)scale(0.35)translate(200px,600px)}
-  40%{transform: scaleX(1)scale(0.35)translate(1200px,600px);}
-  50%{transform: scaleX(-1)scale(0.30)translate(200px,800px)}
-  60%{transform: scaleX(1)scale(0.30)translate(1000px,800px);}
-  70%{transform: scaleX(-1)scale(0.20)translate(200px,1200px)}
-  80%{transform: scaleX(1)scale(0.15)translate(900px,1800px);}
-  90%{transform: scaleX(-1)scale(0.10)translate(200px,2000px)}
+  5%{transform: scaleX(1)scale(0.4)translate(200px,400px)}
+  20%{transform: scaleX(1)scale(0.4)translate(1400px,500px);}
+  35%{transform: scaleX(-1)scale(0.35)translate(200px,600px)}
+  45%{transform: scaleX(1)scale(0.35)translate(1200px,600px);}
+  60%{transform: scaleX(-1)scale(0.30)translate(200px,800px)}
+  70%{transform: scaleX(1)scale(0.30)translate(1000px,700px);}
+  85%{transform: scaleX(-1)scale(0.20)translate(200px,1000px)}
+  90%{transform: scaleX(1)scale(0.15)translate(900px,1500px);}
+  95%{transform: scaleX(-1)scale(0.10)translate(200px,2000px)}
   100%{transform: scaleX(1)scale(0.10)translate(900px,2000px);}
 }
 

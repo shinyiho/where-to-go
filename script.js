@@ -206,9 +206,14 @@ function togglebottoms(e) {
 
 
 
-document.querySelector(".go").addEventListener("click", memove);
-
-function memove() {
-  console.log("nmenmoeve")
+document.querySelector(".go").addEventListener("click", ()=>{
   document.querySelector(".me").classList.add('memove');
-}
+});
+document.querySelector(".go").addEventListener("transitionend", ()=>{
+  document.querySelector(".me").classList.remove('memove');
+});
+
+// function memove() {
+//   console.log("nmenmoeve")
+  
+// }
