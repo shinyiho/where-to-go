@@ -188,7 +188,6 @@ function togglebottoms(e) {
 }
 let timeoutId;
 document.getElementById("go").addEventListener("click", (e) => {
-  console.log("sclskj;lak");
   if (document.querySelector(".me").classList.contains("memove")) {
     document.querySelector(".me").classList.remove("memove");
     e.target.textContent = "go";
