@@ -80,37 +80,25 @@ let background = document.getElementById("background");
 
 function clothLeft() {
   console.log(cloth);
-  clothChoicesPointer =
-    clothChoicesPointer - 1 < 0
-      ? clothChoices.length - 1
-      : clothChoicesPointer - 1;
+  clothChoicesPointer = clothChoicesPointer - 1 < 0 ? clothChoices.length - 1 : clothChoicesPointer - 1;
   cloth.src = clothChoices[clothChoicesPointer];
 }
 
 function clothRight() {
   console.log(cloth);
-  clothChoicesPointer =
-    clothChoicesPointer + 1 > clothChoices.length - 1
-      ? 0
-      : clothChoicesPointer + 1;
+  clothChoicesPointer = clothChoicesPointer + 1 > clothChoices.length - 1 ? 0 : clothChoicesPointer + 1;
   cloth.src = clothChoices[clothChoicesPointer];
 }
 
 function pantLeft() {
   console.log(pant);
-  pantChoicesPointer =
-    pantChoicesPointer - 1 < 0
-      ? pantChoices.length - 1
-      : pantChoicesPointer - 1;
+  pantChoicesPointer = pantChoicesPointer - 1 < 0 ? pantChoices.length - 1 : pantChoicesPointer - 1;
   pant.src = pantChoices[pantChoicesPointer];
 }
 
 function pantRight() {
   console.log(pant);
-  pantChoicesPointer =
-    pantChoicesPointer + 1 > pantChoices.length - 1
-      ? 0
-      : pantChoicesPointer + 1;
+  pantChoicesPointer = pantChoicesPointer + 1 > pantChoices.length - 1 ? 0 : pantChoicesPointer + 1;
   pant.src = pantChoices[pantChoicesPointer];
 }
 
@@ -126,8 +114,7 @@ function pantRight() {
 // }
 function changeLip() {
   console.log("lip");
-  lipChoicesPointer =
-    lipChoicesPointer + 1 > lipChoices.length - 1 ? 0 : lipChoicesPointer + 1;
+  lipChoicesPointer = lipChoicesPointer + 1 > lipChoices.length - 1 ? 0 : lipChoicesPointer + 1;
   lip.src = lipChoices[lipChoicesPointer];
 }
 
@@ -139,15 +126,12 @@ function changeLip() {
 
 function changeView() {
   console.log(document.width);
-  viewChoicesPointer =
-    viewChoicesPointer + 1 > viewChoices.length - 1
-      ? 0
-      : viewChoicesPointer + 1;
+  viewChoicesPointer = viewChoicesPointer + 1 > viewChoices.length - 1 ? 0 : viewChoicesPointer + 1;
   view.style = `background:url(${viewChoices[viewChoicesPointer]});background-size:920px 710px;`;
   //這樣會覆蓋整個style想想看如何加上去而不是覆蓋1344px 1008px
 }
 
-document.querySelectorAll(".accessoriesOption").forEach(item => {
+document.querySelectorAll(".accessoriesOption").forEach((item) => {
   item.addEventListener("click", toggleAccessories);
 });
 
@@ -155,7 +139,7 @@ function toggleAccessories(e) {
   face.src = e.target.getAttribute("imgurl");
 }
 
-document.querySelectorAll(".eyesOption").forEach(item => {
+document.querySelectorAll(".eyesOption").forEach((item) => {
   item.addEventListener("click", toggleEyes);
 });
 
@@ -163,7 +147,7 @@ function toggleEyes(e) {
   eye.src = e.target.getAttribute("imgurl");
 }
 
-document.querySelectorAll(".nosesOption").forEach(item => {
+document.querySelectorAll(".nosesOption").forEach((item) => {
   item.addEventListener("click", toggleNoses);
 });
 
@@ -171,7 +155,7 @@ function toggleNoses(e) {
   nose.src = e.target.getAttribute("imgurl");
 }
 
-document.querySelectorAll(".mouthsOption").forEach(item => {
+document.querySelectorAll(".mouthsOption").forEach((item) => {
   item.addEventListener("click", toggleMouths);
 });
 
@@ -179,7 +163,7 @@ function toggleMouths(e) {
   mouth.src = e.target.getAttribute("imgurl");
 }
 
-document.querySelectorAll(".backgroundsOption").forEach(item => {
+document.querySelectorAll(".backgroundsOption").forEach((item) => {
   item.addEventListener("click", toggleBackgrounds);
 });
 
@@ -187,7 +171,7 @@ function toggleBackgrounds(e) {
   background.src = e.target.getAttribute("imgurl");
 }
 
-document.querySelectorAll(".topsOption").forEach(item => {
+document.querySelectorAll(".topsOption").forEach((item) => {
   item.addEventListener("click", toggleTops);
 });
 
@@ -195,26 +179,27 @@ function toggleTops(e) {
   cloth.src = e.target.getAttribute("imgurl");
 }
 
-document.querySelectorAll(".bottomsOption").forEach(item => {
+document.querySelectorAll(".bottomsOption").forEach((item) => {
   item.addEventListener("click", togglebottoms);
 });
 
 function togglebottoms(e) {
   pant.src = e.target.getAttribute("imgurl");
 }
-
-let timeoutId
-document.querySelector(".go").addEventListener("click", (e) => {
+let timeoutId;
+document.getElementById("go").addEventListener("click", (e) => {
+  console.log("sclskj;lak");
   if (document.querySelector(".me").classList.contains("memove")) {
     document.querySelector(".me").classList.remove("memove");
-    e.target.textContent = 'go'
-    if (timeoutId) { clearTimeout(timeoutId) }
-    
+    e.target.textContent = "go";
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
   } else {
-    e.target.textContent = 'stop'
+    e.target.textContent = "stop";
     document.querySelector(".me").classList.add("memove");
     timeoutId = setTimeout(() => {
-      e.target.textContent = 'go'
+      e.target.textContent = "go";
       document.querySelector(".me").classList.remove("memove");
     }, 10000);
   }

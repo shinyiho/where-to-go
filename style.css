@@ -9,13 +9,12 @@ body {
 }
 
 #box {
-  box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488,
-    -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF,
-    12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B,
-    -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488, -7px -5px 15px 5px #8cff85,
+    12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b, -10px -7px 27px 1px #8e5cff,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
   border-radius: 30px;
   height: 90vh;
-  z-index: -1;
+  z-index: 1;
   width: 60vw;
   position: relative;
 }
@@ -25,17 +24,6 @@ body {
   height: 90vh;
   opacity: 70%;
   border-radius: 30px;
-}
-.setting > button {
-  width: 30px;
-  background-color: ivory;
-  border: none;
-  box-shadow: 2px 4px #888888;
-  font-size: 20px;
-  border-radius: 5px;
-  margin-left: 30px;
-  margin-top: 20px;
-  z-index: 7;
 }
 #clothImg {
   width: 220px;
@@ -50,7 +38,6 @@ body {
   top: 270px;
 }
 .me {
-
   width: 270px;
   height: 90vh;
   display: flex;
@@ -94,7 +81,7 @@ body {
   width: 160px;
   left: 31px;
   top: 260px;
-  /*   
+  /*
   display: flex;
   justify-content: center; */
 }
@@ -106,20 +93,24 @@ body {
 .option {
   margin: 2px;
   padding: 4px;
- font-family: 'Press Start 2P', cursive;
-  font-size:12px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
   color: lightcoral;
 }
 .option:hover {
   color: pink;
 }
-h2 {
+#go {
+  position: absolute;
+  background-color: transparent;
+  border: none;
   font-family: "Stalinist One", cursive;
-   font-size:20px;
+  font-size: 20px;
   color: orangered;
   margin: 0;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 hr {
   border-top: 1px solid #ed83b577;
@@ -127,38 +118,56 @@ hr {
 }
 
 @keyframes go {
-  
-  0% {transform: scaleX(1)scale(1);}
-  5%{transform: scaleX(1)scale(0.4)translate(200px,400px)}
-  20%{transform: scaleX(1)scale(0.4)translate(1400px,500px);}
-  35%{transform: scaleX(-1)scale(0.35)translate(200px,600px)}
-  45%{transform: scaleX(1)scale(0.35)translate(1200px,600px);}
-  60%{transform: scaleX(-1)scale(0.30)translate(200px,800px)}
-  70%{transform: scaleX(1)scale(0.30)translate(1000px,700px);}
-  85%{transform: scaleX(-1)scale(0.20)translate(200px,1000px)}
-  90%{transform: scaleX(1)scale(0.15)translate(900px,1500px);}
-  95%{transform: scaleX(-1)scale(0.10)translate(200px,2000px)}
-  100%{transform: scaleX(1)scale(0.10)translate(900px,2000px);}
+  0% {
+    transform: scaleX(1) scale(1);
+  }
+  5% {
+    transform: scaleX(1) scale(0.4) translate(200px, 400px);
+  }
+  20% {
+    transform: scaleX(1) scale(0.4) translate(1400px, 500px);
+  }
+  35% {
+    transform: scaleX(-1) scale(0.35) translate(200px, 600px);
+  }
+  45% {
+    transform: scaleX(1) scale(0.35) translate(1200px, 600px);
+  }
+  60% {
+    transform: scaleX(-1) scale(0.3) translate(200px, 800px);
+  }
+  70% {
+    transform: scaleX(1) scale(0.3) translate(1000px, 700px);
+  }
+  85% {
+    transform: scaleX(-1) scale(0.2) translate(200px, 1000px);
+  }
+  90% {
+    transform: scaleX(1) scale(0.15) translate(900px, 1500px);
+  }
+  95% {
+    transform: scaleX(-1) scale(0.1) translate(200px, 2000px);
+  }
+  100% {
+    transform: scaleX(1) scale(0.1) translate(900px, 2000px);
+  }
 }
-
-
 
 .memove {
   animation-name: go;
-/*     transition: all 13s;
+  /*     transition: all 13s;
    transition: transform 10s; */
   animation-duration: 10s;
-  
 }
 
-.go{
-  margin:-4px;
-  text-shadow:2px 2px #000000;
-  color:white;
-  font-size:20px
+.go {
+  margin: -4px;
+  text-shadow: 2px 2px #000000;
+  color: white;
+  font-size: 20px;
 }
-.go:hover{
-  color:white;
-  font-size:23px;
- transition: all 0.5s ease-in-out;
+.go:hover {
+  color: white;
+  font-size: 23px;
+  transition: all 0.5s ease-in-out;
 }
